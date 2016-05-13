@@ -1,0 +1,20 @@
+@import url(normalize.css);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,200);
+/* -------------------------------- 
+  Primary style
+----------------------------------s */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #131d20;
+  margin: 0;
+}
