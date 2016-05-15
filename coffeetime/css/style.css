@@ -31,6 +31,10 @@ body {
   max-width: 500px;
 }
 
+iframe{
+  width: 100% !important;
+}
+
 h1{
   font-size: 3rem;
   text-align: center;
