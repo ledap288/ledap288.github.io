@@ -48,3 +48,8 @@ h1{
 .goodbuy span{
   font-weight: 300;
 }
+
+.down{
+  width: 100px;
+  margin: 25px 0;
+}
