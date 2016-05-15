@@ -29,10 +29,22 @@ body {
   margin: 0 auto;
   padding: 25px 20px;
   max-width: 500px;
+  text-align: center;
 }
 
 h1{
   font-size: 3rem;
   text-align: center;
   font-weight: 400;
+}
+
+.goodbuy{
+  font-weight: 700;
+  font-size: 2.6rem;
+  text-align: center;
+  color: #fff;
+}
+
+.goodbuy span{
+  font-weight: 300;
 }
