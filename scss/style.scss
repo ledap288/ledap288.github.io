@@ -1,14 +1,35 @@
-@import url(normalize.css);
-@import url(https://fonts.googleapis.com/css?family=Exo+2:400,300,700&subset=latin,cyrillic-ext,cyrillic);
+@import "normalize";
+@import "materialize";
 /* --------------------------------
-  Primary style
-----------------------------------s */
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  Primary styles
+----------------------------------*/
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-img{
-  max-width: 100%;
+body {
+    font-family: 'Roboto', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+nav {
+    background: #f5f5f5;
+    .brand-logo {
+        color: #616161;
+    }
+    ul {
+        a {
+            color: #616161;
+        }
+    }
+    .switch {
+        margin-left: 30px;
+    }
+}
+label {
+    color: #616161;
 }
