@@ -6185,19 +6185,104 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 body {
   font-family: 'Roboto', sans-serif; }
 
+a {
+  outline: none !important; }
+
 img {
   max-width: 100%; }
+
+.hidden {
+  opacity: 0; }
+
+.visible {
+  opacity: 1; }
 
 nav {
   background: #f5f5f5; }
   nav .brand-logo {
     color: #616161; }
-  nav ul a {
+  nav ul.table-of-contents a {
     color: #616161; }
+    nav ul.table-of-contents a.active, nav ul.table-of-contents a:hover {
+      border: none;
+      background: none;
+      color: #039be5;
+      padding-left: 20px; }
   nav .switch {
     margin-left: 30px; }
+    nav .switch label input[type=checkbox]:checked + .lever {
+      background: #039be5; }
+      nav .switch label input[type=checkbox]:checked + .lever:after {
+        background: #0288d1; }
+  nav .button-collapse {
+    color: #039be5; }
 
 label {
   color: #616161; }
+
+.parallax-container {
+  display: flex;
+  align-items: center; }
+  .parallax-container .slogan {
+    color: #fff;
+    font-size: 46px;
+    text-shadow: 0 0 15px #a1887f; }
+
+.second_backbround {
+  background: #fafafa; }
+
+h2 {
+  text-align: center; }
+
+#about {
+  text-align: center; }
+
+#services .card {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+#portfolio .tabs .tab a {
+  color: #039be5; }
+  #portfolio .tabs .tab a:hover {
+    color: #0279b3; }
+#portfolio .tabs .indicator {
+  background: #039be5; }
+#portfolio .project {
+  margin-top: 20px; }
+  #portfolio .project .project_img {
+    float: left;
+    margin-right: 20px; }
+  #portfolio .project h4 {
+    font-size: 26px; }
+
+#contact .submit {
+  text-align: center; }
+  #contact .submit a {
+    margin-top: 40px; }
+#contact h4.header {
+  text-align: center;
+  margin-top: 100px; }
+#contact .our_contacts {
+  font-size: 24px;
+  margin-top: 40px;
+  color: #616161; }
+  #contact .our_contacts i {
+    font-size: 42px; }
+  #contact .our_contacts .col {
+    line-height: 42px;
+    margin-bottom: 20px; }
+  #contact .our_contacts iframe {
+    width: 100% !important;
+    height: 550px !important; }
+
+footer.page-footer {
+  background: #fafafa;
+  padding: 0;
+  margin-top: 40px; }
+  footer.page-footer .footer-copyright {
+    color: #616161; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,4 +6,33 @@ $(document).ready(function() {
     });
 
     $('.parallax').parallax();
+
+    $('.scrollspy').scrollSpy();
+
+    $('#modal').leanModal();
+
+    $('ul.tabs').tabs();
+
+    $('#services .card').addClass("hidden").viewportChecker({
+        classToAdd: 'visible',
+        offset: 200
+    });
+
+    $('nav ul li a').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 64)
+        }, 750, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+
+    // $(window).scroll(function() {
+    //     if ($('#services .card').length != 0) {
+    //         $('.how_it_works_step').each(function(i) {
+    //             $(this).delay((i++) * 300).fadeTo(1000, 1);;
+    //         })
+    //     };
+    //
+    // }).trigger('scroll');
 });

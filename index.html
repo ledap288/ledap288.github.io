@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="js/materialize.min.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
 	<script src="js/main.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -21,13 +22,14 @@
 		<nav class="lighten-5">
 			<div class="nav-wrapper">
 				<div class="container">
-					<a href="#!" class="brand-logo">highedge</a>
-					<ul class="right hide-on-med-and-down">
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portfolio</a></li>
-						<li><a href="#">Prices</a></li>
-						<li><a href="#">Contact</a></li>
+					<a href="#home" class="brand-logo">highedge</a>
+					<ul class="right hide-on-med-and-down table-of-contents">
+						<li><a href="#home" class="">Home</a></li>
+						<li><a href="#about" class="">About</a></li>
+						<li><a href="#services" class="">Services</a></li>
+						<li><a href="#portfolio" class="">Portfolio</a></li>
+						<li><a href="#prices" class="">Prices</a></li>
+						<li><a href="#contact" class="">Contact</a></li>
 						<li>
 							<div class="switch">
 								<label>
@@ -45,25 +47,315 @@
 	</div>
 
 	<ul id="slide-out" class="side-nav">
-		<li><a class="waves-effect" href="#!">First Link With Icon</a></li>
-		<li><a class="waves-effect" href="#!">Second Link</a></li>
-		<li>
-			<div class="divider"></div>
-		</li>
-		<li><a class="waves-effect">Third Link</a></li>
-		<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		<li><a href="#home" class="waves-effect">Home</a></li>
+		<li><a href="#about" class="waves-effect">About</a></li>
+		<li><a href="#services" class="waves-effect">Services</a></li>
+		<li><a href="#portfolio" class="waves-effect">Portfolio</a></li>
+		<li><a href="#prices" class="waves-effect">Prices</a></li>
+		<li><a href="#contact" class="waves-effect">Contact</a></li>
 	</ul>
 
 
-	<div class="parallax-container">
+	<div class="parallax-container scrollspy" id="home">
 		<div class="parallax"><img src="img/parallax.jpg"></div>
+		<div class="container slogan">highedge - slogan here</div>
 	</div>
-	<div class="section white">
+	<div class="section white scrollspy" id="about">
 		<div class="row container">
-			<h2 class="header">Parallax</h2>
-			<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+			<h2 class="header">About us</h2>
+			<p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis earum sequi incidunt ut obcaecati ipsum recusandae beatae unde cum, magnam nesciunt, eos eveniet a! Corrupti doloremque repellendus eos mollitia sed.Lorem ipsum dolor sit amet, consectetur
+				adipisicing elit. Debitis earum sequi incidunt ut obcaecati ipsum recusandae beatae unde cum, magnam nesciunt, eos eveniet a! Corrupti doloremque repellendus eos mollitia sed.</p>
+			<p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis earum sequi incidunt ut obcaecati ipsum recusandae beatae unde cum, magnam nesciunt, eos eveniet a! Corrupti doloremque repellendus eos mollitia sed.</p>
+			<p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis earum sequi incidunt ut obcaecati ipsum recusandae beatae unde cum, magnam nesciunt, eos eveniet a! Corrupti doloremque repellendus eos mollitia sed. Corrupti doloremque repellendus
+				eos mollitia sed.</p>
+
 		</div>
 	</div>
+
+	<div class="section scrollspy second_backbround" id="services">
+		<div class="row container">
+			<h2 class="header">Services</h2>
+			<div class="col s12">
+				<div class="card horizontal">
+					<div class="card-image">
+						<img src="img/html5.png">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>Highedge takes care of all aspects of the product development lifecycle. We don't only think about what is your project about and how we will get it designed and built, but we also ensure it will be properly tested, deployed and maintained. Our
+								focus is to overcome all your particular business challenges in a way that satisfies your need for speed, cost effectiveness and high quality.</p>
+						</div>
+						<div class="card-action">
+							<a href="#!">Link or ?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="card horizontal">
+
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>Highedge takes care of all aspects of the product development lifecycle. We don't only think about what is your project about and how we will get it designed and built, but we also ensure it will be properly tested, deployed and maintained. Our
+								focus is to overcome all your particular business challenges in a way that satisfies your need for speed, cost effectiveness and high quality.</p>
+						</div>
+						<div class="card-action">
+							<a href="#!">Link or ?</a>
+						</div>
+					</div>
+					<div class="card-image">
+						<img src="img/pg.png">
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="card horizontal">
+					<div class="card-image">
+						<img src="img/java.png">
+					</div>
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>Highedge takes care of all aspects of the product development lifecycle. We don't only think about what is your project about and how we will get it designed and built, but we also ensure it will be properly tested, deployed and maintained. Our
+								focus is to overcome all your particular business challenges in a way that satisfies your need for speed, cost effectiveness and high quality.</p>
+						</div>
+						<div class="card-action">
+							<a href="#!">Link or ?</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12">
+				<div class="card horizontal">
+
+					<div class="card-stacked">
+						<div class="card-content">
+							<p>Highedge takes care of all aspects of the product development lifecycle. We don't only think about what is your project about and how we will get it designed and built, but we also ensure it will be properly tested, deployed and maintained. Our
+								focus is to overcome all your particular business challenges in a way that satisfies your need for speed, cost effectiveness and high quality.</p>
+						</div>
+						<div class="card-action">
+							<a href="#!">Link or ?</a>
+						</div>
+					</div>
+					<div class="card-image">
+						<img src="img/asp.png">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section white scrollspy" id="portfolio">
+		<div class="container">
+
+			<div class="row">
+				<div class="col s12">
+					<h2 class="header">Portfolio</h2>
+					<ul class="tabs">
+						<li class="tab col s3"><a class="active" href="#project1">Project 1</a></li>
+						<li class="tab col s3"><a href="#project2">Project 2</a></li>
+						<li class="tab col s3"><a href="#project3">Project 3</a></li>
+						<li class="tab col s3"><a href="#project4">Project 4</a></li>
+						<li class="tab col s3"><a href="#project5">Project 8</a></li>
+						<li class="tab col s3"><a href="#project6">Project 6</a></li>
+						<li class="tab col s3"><a href="#project7">Project 7</a></li>
+						<li class="tab col s3"><a href="#project8">Project 8</a></li>
+					</ul>
+				</div>
+				<div class="col s12">
+					<div id="project1" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project1 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project2" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project2 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project3" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project3 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project4" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project4 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project5" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project5 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project6" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project6 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project7" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project7 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+					<div id="project8" class="col s12 project">
+
+						<img class="project_img" src="img/project_lorem.png" alt="">
+						<h4>Project8 name</h4>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+						<p>Project description. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate molestiae eos recusandae error, incidunt repudiandae distinctio sequi numquam modi accusantium obcaecati enim aut cumque pariatur unde quam at, amet magni.</p>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="section scrollspy second_backbround" id="prices">
+		<div class="row container">
+			<h2 class="header">Prices</h2>
+			<table class="striped responsive-table">
+				<thead>
+					<tr>
+						<th data-field="name">Sevice</th>
+						<th data-field="price">Price</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Website</td>
+						<td>$4000</td>
+					</tr>
+					<tr>
+						<td>Design</td>
+						<td>$500</td>
+					</tr>
+					<tr>
+						<td>Mobile App</td>
+						<td>$5000</td>
+					</tr>
+					<tr>
+						<td>Desktop App</td>
+						<td>$7000</td>
+					</tr>
+					<tr>
+						<td>Social Network</td>
+						<td>$70000</td>
+					</tr>
+					<tr>
+						<td>Landing Page</td>
+						<td>$1000</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+	<div class="section scrollspy" id="contact">
+		<div class="container">
+			<h2 class="header">Contact us</h2>
+			<div class="row">
+				<form class="col s12">
+					<div class="row">
+						<div class="input-field col s6">
+							<i class="material-icons prefix">account_circle</i>
+							<input id="icon_prefix" type="text" class="validate">
+							<label for="icon_prefix">Name</label>
+						</div>
+						<div class="input-field col s6">
+							<i class="material-icons prefix">phone</i>
+							<input id="icon_telephone" type="tel" class="validate">
+							<label for="icon_telephone">Telephone</label>
+						</div>
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix">email</i>
+							<input id="email" type="email" class="validate">
+							<label for="email" data-error="wrong" data-success="right">Email</label>
+						</div>
+
+						<div class="input-field col s12">
+							<i class="material-icons prefix">mode_edit</i>
+							<textarea id="textarea1" class="materialize-textarea"></textarea>
+							<label for="textarea1">Textarea</label>
+						</div>
+
+						<div class="submit">
+							<a class="waves-effect waves-light btn"><i class="material-icons right">send</i>Submit</a>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<h4 class="header">Our Contacts</h4>
+
+			<div class="row our_contacts">
+				<div class="col s4"><i class="material-icons left">phone</i> +38-093-723-61-58</div>
+				<div class="col s8"><i class="material-icons left">email</i>hidhedge@gmail.com</div>
+				<div class="col s4"><i class="material-icons left">phone</i> +38-093-922-64-05</div>
+				<div class="col s8"><i class="material-icons left">room</i>Hodžovo námestie 568/2, 811 06 Bratislava</div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2662.0602604349015!2d17.105847115863504!3d48.14764345843833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c895b156958af%3A0xc7443ebbe17c3bcd!2zSG9kxb5vdm8gbsOhbWVzdGllIDU2OC8yLCA4MTEgMDYgQnJhdGlzbGF2YSwg0KHQu9C-0LLQsNC60LjRjw!5e0!3m2!1sru!2sua!4v1471693645391"
+								width="600" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="page-footer">
+
+		<div class="footer-copyright">
+			<div class="container">
+				<div class="row">
+					© 2016 Copyright Text
+					<a class="right" href="#!">More Links</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
 </body>
+
+</html>
 
 </html>
