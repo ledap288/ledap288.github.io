@@ -6277,6 +6277,8 @@ h2 {
   #contact .our_contacts iframe {
     width: 100% !important;
     height: 550px !important; }
+#contact .g-recaptcha {
+  display: inline-block; }
 
 footer.page-footer {
   background: #fafafa;
