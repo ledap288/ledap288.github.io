@@ -6255,8 +6255,17 @@ h2 {
   #portfolio .project .project_img {
     float: left;
     margin-right: 20px; }
+    #portfolio .project .project_img.img {
+      max-width: 50%;
+      max-height: 500px; }
   #portfolio .project h4 {
     font-size: 26px; }
+  #portfolio .project ul li {
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: 20px; }
+  #portfolio .project p, #portfolio .project ul {
+    margin: 0 0 10px 0; }
 
 #contact .submit {
   text-align: center; }

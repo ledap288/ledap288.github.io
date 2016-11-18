@@ -26,6 +26,8 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
+    $('.carousel').carousel();
+
 
     // $(window).scroll(function() {
     //     if ($('#services .card').length != 0) {
