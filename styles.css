@@ -66,3 +66,7 @@ footer .links a:hover {
     margin: 0 16px;
     opacity: 1;
 }
+
+.ti-cursor {
+    left: -8px;
+}
