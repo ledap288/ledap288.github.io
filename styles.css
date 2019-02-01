@@ -39,6 +39,11 @@ h1 {
     font-size: 28px;
 }
 
+.current-position {
+    font-size: 24px;
+    margin: 16px 0;
+}
+
 footer {
     position: absolute;
     bottom: 0;
